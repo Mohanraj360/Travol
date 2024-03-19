@@ -1,0 +1,19 @@
+#toast {
+    visibility: hidden;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 16px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 999; /* Ensure toast is above other content */
+  }
+  
+  #toast.show {
+    visibility: visible;
+    opacity: 1;
+  }
